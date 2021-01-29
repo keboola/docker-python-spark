@@ -23,6 +23,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 RUN python3 -m pip install --upgrade pip
 RUN pip3 install --use-feature=2020-resolver --no-cache-dir \
+        avro \
+        fastavro \
         pyspark \
         pandas \
         plotly \
